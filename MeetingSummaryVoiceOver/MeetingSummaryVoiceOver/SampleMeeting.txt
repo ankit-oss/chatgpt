@@ -1,0 +1,281 @@
+thank you for the opportunity to share a topic that we are both passionate about and that is adopting a data first
+approach in ml teams for increased impact a quick intro
+I am a principal data engineer at Microsoft I've been with the company for 15 years and in the last 10 years I've
+played multiple functions within our data team especially during its incubation period with what started out
+as a team of two data analysts we tackled a lot of challenges but we reaped a lot of benefits during our
+trial and error phase and it is in our journey that I learned about the art of
+data analytics and the love of data so when Aishwarya brought up possibly sharing our story in this forum I jumped
+on the opportunity and with that I will give them my cashmere so she can share her part of the journey Aishwarya
+thanks for that now uh hi everyone super excited to be here and I want to thank the entire convergence team again for
+giving us this amazing opportunity to share our experience a little bit about me uh amishwarya murali I'm a principal
+data scientist at Microsoft I'll lead a variety of data science and machine learning initiatives within the
+Microsoft security Arc I've also previously worked at Google and at an early stage analytics-based startup
+espnana mentioned we both incubated our orgs data team literally from scratch we
+now provide a value through insights and deliver operationalized
+models to several cross-functional teams within Microsoft as well as external facing customers
+during this journey we've learned a thing or two about some of the challenges involved in this process
+and during the course of this session we hope to share some of those learnings with the audience so YouTube can be part
+of a strong impactful machine learning team that delivers value
+all right so we have two parts to the session first I'm gonna go over what a data first approach really means and why
+we believe it to be crucial in the next bite Madonna is gonna go with the how what are some of the
+investment areas that need to be prioritized in order to build that culture of being data forward
+let's jump right into the first phase of this session why is the data first approach crucial to machine learning
+theme before I get into that I want to talk about some of the steps involved in
+shipping a machine learning model the first step is obviously Gathering
+the data collecting any and all Telemetry that is relevant for the business
+then comes feature engineering the raw data that we collected in the previous step that gets transformed into
+something meaningful it evolves into something relevant that makes sense as input for the model that we're
+eventually going to build then there's the process of choosing the
+model training it and testing it
+after which comes shipping the operationalized model to either internal stakeholders or external customers
+while this is sort of a simplified View and there's definitely some overlap between the steps broadly speaking
+these two faces the training and operationalizing the model those are model Centric
+while these two faces data Gathering and feature engineering they are data
+Centric right so and these two approaches sort of complement each other
+and I I will say this from experience you know once we have a little data once we start collecting data it's tempting
+to jump into the modeling really quick because machine learning and the power of predictions that's the exciting part
+of our jobs right I mean it's probably why a lot of us got into this field in the first place however I urge you to
+put pause on that because we have to bear in mind that this is not always a linear process there's one step missing
+which is the sustained and continuous monitoring of performance metrics once
+the model is in production we need to understand how well it's doing you know is it serving the right business needs
+because once we receive that feedback it may turn out that sometimes our assumptions were not right and then
+maybe we have to gather new data possibly retrain the model all over again making this one big continuous feedback
+loop so it's not linear it is a cycle I think we can all agree that sure yeah
+you know we can't build a good model without good data but a data first approach goes much beyond that that due
+to the sort of cyclical nature of model development we need to ensure that data is not just treated as a means to an end
+you know we need to thoroughly understand our data the limitations the caveats how it's going to be used
+exactly every single step of the way
+andron is a recognized and Illustrated leader in the ML and AI space I'm sure a
+lot of you would recognize him and I want to highlight his verbatim quote this is from a screen grab from one of
+his talks on data Centric AI data is food for AI
+I can think of no better way to encapsulate the essence of our talk you know in computer science we have
+this concept called garbage in garbage out that applies for model development as
+well if data is indeed food for AI think about what we're feeding to the model
+because that will directly influence what we're going to get out of it to extend the food analogy a little bit
+uh being just moral Centric while ignoring data quality would be like
+hiring the best chefs in the world from Michelin star restaurants but making them cook with rotten ingredients we all
+know how that's gonna go the most powerful models in the world are only as good as the data behind them
+so this chart is from a Ford survey where it was discovered that data
+scientists spend roughly 80 percent of their time cleaning and processing data I'm sure this is relatable to a lot of
+you 80 percent that is a lot this is a process that can be time
+consuming and it can be tedious you know time and effort that can otherwise be
+spent on creative and strategic work not only that
+working with questionable data can set the life cycle of development behind
+quite a bit remember it's not linear it's a cycle right so when we realize
+that we've been working with inaccurate or irrelevant data without fully
+understanding all the context behind it it's often too late and we're gonna have
+to start from scratch all over again and finally
+what happens when we don't invest in building pre-producible features when we don't invest in scalability
+one different teams are going to take the raw data and end up generating their own variant data sets that's just
+repetitive work two there's no single source of Truth No Common Ground no shared vocabulary
+between the teams based on their own understanding of the data and their own assumptions each team is just going to
+create similar but slightly different models and they may even end up proving
+or disproving conflicting hypothesis which one should the business trust there is no good answer for that right
+so these are just some of the pain points and reasons why it's important to
+be proactive about our data goals and have a plan have a contract in place
+speaking of Madonna is going to address data contracts and a single source of Truth in in detail in the later part of
+this session all right moving on so we spoke about
+the pain points in the last slide but are there more demonstrated and tangible
+benefits to being data forward turns out being data Centric improves
+the quality of the model's predictions so I'm going to share a case study from
+Android's keynote so uh basically there was a business with the machine learning
+model and they had a baseline accuracy of 76 percent and their objective was
+hey how can we increase the accuracy you know we want to be maybe like a 90 accuracy for this model
+um and this business initially they had a lot of model Centric improvements done so you know think about things like
+maybe hyper parameter tuning maybe you know like using different algorithms but
+it turns out those model-centric improvements did virtually nothing to impact the accuracy the accuracy
+remained just the same however the same model when data Centric
+improvements were done the accuracy increased to about 93 percent
+so we are right now in a golden age of AI advancements we have a lot of access
+to tools automl uh High performing pre-trained super efficient algorithms
+many of the hard problems in the AI space they're solved or they're being
+sold currently thanks to the efforts of researchers so as applicationists as ml
+practitioners for us focusing on just the model side of things it's gonna return them it's going to result in
+diminishing returns Beyond a point however as we can see better data results in better
+predictions and that is the incentive for us to prioritize these data Centric improvements even though the benefits
+might not be as tangible in the beginning
+so Switching gears a little bit I'm going to talk about responsible Ai and ethics
+we all know AI is becoming much more mainstream it's no longer a niche field
+and it's so super important that we don't ignore the consequences of a
+machine making decisions that impact real humans right think about scenarios
+like healthcare or models that utilize credit scores to Grant loans to people
+we have to make sure that AI is not perpetuating biases or discriminatory
+practices right um and while we can all agree on the shared goal what does that have to do
+with the data first approach turns out good quality well-labeled data
+makes interpretability easier trade-off between having a simple but
+explainable model versus a black box complex model and explainability is just better for
+fairness and transparency that's two of the principles right there and sometimes even from a resourcing
+perspective or from a cost perspective it's just better for the business to create a simple model that solves let's
+say 90 of the scenarios the other aspect of ethical AI is that
+models that are trained on diverse data sets on a variety of data sets and
+Madonna is going to talk about variety again later those models tend to perform better because they've seen examples of what
+they need to learn and they can generalize better to newer situations even if they haven't learned from that
+exact situation before so ultimately the way to increase customer trust in AI
+is to be transparent unbiased Fair inclusive as much as possible
+and a data forward approach can actually when done right can help with all of
+that before I wrap up the first phase of this
+session I'm going to talk about the role of human intelligence within the context of artificial intelligence you know
+speaking of AI I'd be remiss if I then make a shout out to the groundbreaking
+efforts behind chat GPT it's gone viral everyone is Amazed by how well Chachi
+Pedic and sustain an almost realistic conversation with humans right
+turns out open ai's original GPT GPT 3 language models initially had some flaws
+while it was a powerful natural language processing model initially they didn't perform as well at
+understanding instructions uh you know it was really good at autocomplete but
+if you gave an instruction like hey write me a python code to do one hot encoding or you know summarize this long
+article for me it wouldn't work as well not only that it sometimes tended to
+generate toxic harmful content or even you know outright false statements what
+we call hallucinations right so how did they deal with this problem
+enter instruct GPT instruct GPT was a variant model on gpt3
+that made use of a technique called rlhf reinforcement learning from Human
+feedback and as the name suggests instruct GPT did a much better job
+responding to instruction like prompts like actual questions the way humans would talk
+so in other words summarizing chart GPT one of the world's most powerful AI that
+we've ever seen is better safer and more truthful today as a result of human context
+so the next thing I want to talk about is how a data first approach and focusing
+on quality is much more than just checks and balances we also need to consider
+things from a human context are we focusing on the right problem are the
+assumptions we're making palette are we engineering the most relevant features
+are we proactively identifying issues that could happen in the future things like data drift that could impact the
+model's predictions and and finally is this approach even right is this
+approach going to produce a result that aligns with that business objective again all this context the business
+knowledge domain expertise that is derived from humans because ultimately
+data is meaningless without human context and on that note I'm going to
+hand over to Madonna who's going to talk about how to build that data first
+culture right thank you sure for providing the
+context um I will pick up which ashwear left off the focus on how to adopt that data
+first culture let's start with what we are measured against our North Star is to provide that
+actionable insights this is why the data team exists this is our value prop our own experience has taught us that
+the path that this value is rooted in delivering foundations focused on volume
+velocity variety and verification now this is a very familiar concept this is
+the five V's of defining Big Data while these 5V still hold true in that
+aspect I want you to walk with me in looking at these in a different lens seeing these functions
+as 5vs for impact so let's unpack that statement the 5v's
+defining functions for impact let's look at insights as a journey this is that Journey that ashware and I
+ventured on years ago I'll share the story by starting at the end the current state in which we are
+achieving and delivering impact through actionable insights looking back at how we matured over the years we recognize
+the importance of going back to the basics of data data in its simplest form
+before it goes through any training or algorithm we put our focus on ensuring our
+insights are delivered Based on data set that has been collected and curated
+and this is the function of our data engineering the technical execution of extracting loading and transforming
+Telemetry into the collected and curated data sets but as our data landscape continued to
+grow we realized that there's another distinct yet interconnected function
+that evolved and that is the analytics engineering so what is the difference you may ask
+isn't that just semantics I would argue that analytics engineering
+is distinct in that its primary focus is to be the author of the data it oversees
+the landscape from all Ingress and egress points think of it as the data architect or
+using a non-technical analogy think of it as an author of a book and each
+character is a data as the author I decide which of my characters are the
+leading role which ones are supporting roles and which one can simply Fade Into the background
+for each of the character I will then build the storyline from one chapter to the next from prequel to SQL
+in the analytics context this function will provide the plot for how data
+engineering would execute the data extraction and movement and on the other hand instruct how data science would
+consume interpret and apply the data while these functions
+are distinct in their own ways there is a Synergy happening when we tackle the
+other Visa volume velocity variety and verification
+to illustrate this energy I used a spectrum with my data engineering on one side and analytics engineering on the
+other let's start with volume this is the how much data question
+sliding my function either more on the data engineering side this is about making the technical decision on which
+infrastructure and Technical Resources have the right storage and compute to handle the load additionally we take the
+opportunities to lessen the load by doing some of the data prep decisions like filtering out duplicates or noise
+storing data as column numbers versus row values normalizing the data being
+intentional on our data types in schema are some of the examples right but how much load is needed
+it's putting on our analytics engineering function hat on we make the
+decision on which data can answer that business question going back to my analogy of a book
+author I will start the selection of which of my characters or my data point
+holds the crucial lead role versus supporting Rogue versus roles that just
+have no impact to the storyline next is velocity and this is the how
+fast in the context of how fresh velocity as characteristics of data such as real time near real time or batch
+similar to volume our data engineering function addresses this question and
+ensure that our technical stack can handle the frequency of Ingress in egress again this is the velocity in the
+context of defining Big Data but I'll touch on on another aspect of velocity and that is velocity in the
+context of operations number one how fast can we onboard or off-board
+data as the Dynamics of data change along with the Dynamics of this requirements we need to be able to keep up
+from a technical aspect we can look at devops to automate data pipelines
+whatever technology we use we look at opportunities to standardize creation of
+data flows through tools and automation as well as using continuous integration
+to help verify that our builds from tests to pre-production to production are quality
+within analytics engineering function we focus our energy on figuring out how to
+develop the data so it fits with our existing stories all about having the single social truth
+if we design it just right when the need arrives to use the data we can simply
+Plug and Play this new onboarded entity can be integrated and applied to multiple
+egress points with Integrity intact we ensure that irrespective of how many
+leadership reports or data science experiments use the data set we are talking the same terminology and the
+data is telling the same story through parity in numbers this means we avoid that exercise of your number doesn't
+match my number and we all know how much fun that is one thing one item I'd like to highlight
+about the single source of Truth is the development of a data point is very involved when it comes to data wrangling
+and Analysis as part of our data story we sometimes have to mesh complex storylines from the Multiverse for
+example suppose we need to track active usage of a streaming service my core function is to untangle what does it
+mean to be active and what is usage is active pertaining to how many times an event occurred or is it a duration of a
+logged on it's a user an endpoint or do we take into account different users sharing those endpoints answering these
+questions are what I often prefer to as square peg roundhold exercise within this analytics engineering
+function I have to have the domain expertise about how a feature or how a
+service Works in order to find that right story to answer that business question in context
+then there's all there's also the offboarding on the other side two words here data migration this is a
+classic example of why off-boarding compared to onboarding is the scarier
+part because this is where the question is what breaks what is the impact and
+how big is that blast radius within the analytics engineering because
+I know how the story are interconnected I can say hey do not let the character
+leave at the end of chapter 5 or else what happens in chapter 7 will leave the readers confused I highlight this
+because there is a significant amount of work in keeping the lights on to ensure
+there is business continuity while migration is happening the function of
+analytics engineering during this phase is to provide guidelines for how the data engineering will execute the
+different moving parts during that migration number two in the context of velocity
+is operations it's the how fast can we respond or resolve incident
+tools and automation can focus on monitoring resource Health we can set up alerts when resources for example have
+failing nodes requests are getting throttled data flows are failing additionally if we standardize and use
+continuous integration for data pipelines we can easily identify which state of the data flow is failing as
+well as ensure that we follow that safe deployment process for any code changes required to address the issue
+equally important to tools and automation that I will highlight is the data contract experience has taught me
+that before we get into the integration development phase we must be explicit on
+what the data set is things like how often will it refresh or what are the
+filters we are including or excluding when I say active usage for example it is defined as the user logged onto the
+service in the last seven days additionally if we are dependent on Upstream data partner
+we must have a commitment specific to operating level agreement what is that
+right escalation path which email or distribution group do we contact when it
+comes to working the incident what type of support and hours of support will they provide
+how can we be in the know when the CH when there are changes we must be intentional on ensuring these questions
+are asked so we have the right plan in place when data incident occurs
+now uh moving on I want to talk about variety our big data definition is about data
+type format are we looking at text image sentiments tabular structure
+unstructured file types Right This falls into the store and Computing decisions similar to volume and velocity data
+engineering function ensures that our infrastructure can scale and supporting multiple data types as well as multiple
+egress and Ingress endpoints but more importantly though that I want to touch on is in the context of data
+privacy this is where where is the data question in order to meet various laws and
+compliance we must ensure that certain data stay in specific geographical region this is where analytics and data
+engineering have to plan and execute intend them both functions must Implement both Technical and procedural
+solutions to route and store data appropriately another equally important variety
+question is the what is that data classification and this is the part of our story which
+we answered the questions such as is the data being used for what it is intended
+for its usage in the context of running or operating the service feature product
+and that would require access to event logs or billing info or is it in the context of running the
+business which is around aggregated metrics and kpis such as month-to-month total usage or increase in followers
+knowing the intent of the data use will drive retention period
+how long can we keep the data we must ensure that we keep data as long as
+necessary under the intended use and that means we need to account for technical data retention as well as
+handing requests for deletions and this is where devops tools and automations come into play
+knowing the intent of data use will drive identity management this is the context in which variety
+overlaps with our last V which is verification who can access when which data
+classification we need to have a solid Technical and procedural solution that
+way that will handle providing data access based on roles earlier I had
+mentioned about intended data use it's in the context of running the service or is it in the context of running the
+business if it's running the service then Persona such as devops or support Engineers will have access to role-level
+information while Persona such as finance and marketing will have access only to aggregated data
+this role-based Access Control should be part of our tools and automations how do
+we ensure that the access models followed how do we scan for an authorized access as part of devops we
+look at solutions to handle access requests Security Group memberships and management as well as audit
+now I'm I'm moving I'm going to move on to talk about that last verification and
+that is in the context of data fidelity when there is synergy that happens right
+the verification is an organic byproduct the end result is that we will have a
+data that is curated data that is Timely data that is consistent
+data that is reliable data that is secure and data that is compliant this
+is what adopting data first cultural will produce for our data scientists these are the quality of data we want to
+continuously feed to our models and with that we are now at the end of our session
+I swear and I touched on a lot but we want to leave you with a few key points
+data is food for AI without quality data as understated it is like having the best chefs cooking
+with rotten ingredients effectiveness of model is rooted in the pillars of data quality again this
+consistency reliability security and compliance
+and lastly insights as a journey each of us has gone through or is currently
+good Journeys be intentional on what impact your team is measured on
+in order to understand the investment required within the 5V or the five functions that we had spoken about
+again on behalf of Aishwarya I want to thank you for allowing us to share our journey and learnings and adopting a
+data first approach in ml teams for increased impact thank you very much
